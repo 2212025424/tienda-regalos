@@ -1,0 +1,342 @@
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| Header principal de página principal 
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.main-header-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../public/static_images/pexels-engin-akyurt-1552639.jpg);
+  background-color: var(--main-color);
+}
+
+.main-header-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
+  opacity: 0.7;
+}
+
+.main-header-image_text {
+  position: absolute;
+  width: 60%;
+  min-width: 300px;
+  left: 30px;
+  color: var(--white-color);
+}
+
+.main-header-image_title {
+  font-weight: bolder;
+  font-size: var(--text-big);
+}
+
+.main-header-image_description {
+  font-weight: normal;
+  font-size: var(--text-subtitle);
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| Enlace de red social cuadrado
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.wrap-social-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  font-size: 23px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| Elemento contenedor de producto 
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.wrap-product {
+  box-shadow: 0px 0px 2px var(--gray-color-variation);
+  border-radius: 5px;
+}
+
+.wrap-product_img {
+  position: relative;
+}
+
+.wrap-product_img-normal {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+}
+
+.wrap-product_img-250 {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+}
+
+.wrap-product-featured_icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+.wrap-product-featured_description {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+}
+
+.wrap-product_body {
+  padding: 5px;
+}
+
+.wrap-product_title {
+  font-weight: normal;
+  font-size: var(--text-normal);
+}
+
+.wrap-product_description {
+  font-weight: normal;
+  font-size: var(--text-description);
+  color: var(--black-color);
+}
+
+.wrap-product_discount {
+  font-weight: normal;
+  font-size: var(--text-description);
+  color: var(--gray-color-variation);
+}
+
+.wrap-product_discount span {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: line-through;
+}
+
+.wrap-product_price {
+  font-size: var(--text-subtitle);
+  color: var(--black-color);
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| cuadricula uniforme de productos
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.wrap-uniform-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| cuadricula variada de productos
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.wrapper-grid-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.wrapper-grid-products > div:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.wrapper-grid-products > div:nth-child(2) {
+  grid-column: 3/5;
+}
+
+.wrapper-grid-products > div:nth-child(3) {
+  grid-column: 1/2;
+}
+
+.wrapper-grid-products > div:nth-child(4) {
+  grid-column: 2/4;
+}
+
+.wrapper-grid-products > div:nth-child(5) {
+  grid-column: 4/5;
+}
+
+.wrapper-grid-products > div:nth-child(6) {
+  grid-column: 1/3;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper-grid-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .wrapper-grid-products > div:nth-child(1) {
+    grid-column: 1/3;
+  }
+  .wrapper-grid-products > div:nth-child(2) {
+    grid-column: 3/4;
+  }
+  .wrapper-grid-products > div:nth-child(3) {
+    grid-column: 1/2;
+  }
+  .wrapper-grid-products > div:nth-child(4) {
+    grid-column: 2/4;
+  }
+  .wrapper-grid-products > div:nth-child(5) {
+    grid-column: 1/3;
+  }
+  .wrapper-grid-products > div:nth-child(6) {
+    grid-column: 3/4;
+  }
+  .wrapper-grid-products > div:nth-child(7) {
+    grid-column: 1/2;
+  }
+  .wrapper-grid-products > div:nth-child(8) {
+    grid-column: 2/4;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper-grid-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .wrapper-grid-products > div:nth-child(1) {
+    grid-column: 1/3;
+  }
+  .wrapper-grid-products > div:nth-child(2) {
+    grid-column: 1/3;
+  }
+  .wrapper-grid-products > div:nth-child(3) {
+    grid-column: 1/2;
+  }
+  .wrapper-grid-products > div:nth-child(4) {
+    grid-column: 2/3;
+  }
+  .wrapper-grid-products > div:nth-child(5) {
+    grid-column: 1/3;
+  }
+  .wrapper-grid-products > div:nth-child(6) {
+    grid-column: 1/2;
+  }
+  .wrapper-grid-products > div:nth-child(7) {
+    grid-column: 2/3;
+  }
+  .wrapper-grid-products > div:nth-child(8) {
+    grid-column: 1/3;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| Estilo a deslizador
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.scrollbar-y::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar-x::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: var(--redondeado);
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: var(--redondeado);
+}
+
+.scrollbar-style::-webkit-scrollbar-track:hover,
+.scrollbar-style::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+/*-------------------| Estilo a imagenes
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.imagen-wh100px {
+  border: solid 1px var(--gray-color-variation);
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.grid-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid-tree-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid-two-cols-90px-1fr {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-gap: 10px;
+}
+
+.grid-two-cols-250px-1fr {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 10px;
+}
+
+.grid-two-cols-1fr-150px {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-gap: 10px;
+}
+
+.table-grid-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .table-grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+}

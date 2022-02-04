@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Variables css de scope glogal 
+/*--------------------------------------------------------------------------------------------------------------*/
+
+:root {
+  --main-color: rgba(211, 221, 106);
+  --black-color: rgb(52, 59, 71);
+  --black-color-variation: rgba(47, 53, 64);
+  --blue-color: rgba(30, 144, 255);
+  --blue-color-variation: rgba(29, 111, 191);
+  --white-color: rgba(255, 255, 255);
+  --white-color-variation: rgba(245, 250, 245);
+  --gray-color: rgba(200, 210, 212);
+  --gray-color-variation: rgb(115, 122, 126);
+  --text-big: 3.4rem;
+  --text-title: 2rem;
+  --text-subtitle: 1.5rem;
+  --text-normal: 1.2rem;
+  --text-desciption: 1rem;
+  --text-small: 0.7rem;
+  --navbar-height: 60px;
+  --rounded: 3px;
+}
+
+body {
+  padding-top: var(--navbar-height) !important;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Modificadores a la barra de navegación
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.navbar {
+  min-height: var(--navbar-height);
+  font-size: var(--text-normal);
+  color: var(--white-color) !important;
+  background-color: var(--main-color);
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Modificadores a Slider
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.slick-list {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.slick-next,
+.slick-prev {
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+  background-color: var(--main-color) !important;
+}
+
+.slick-next {
+  right: -7px;
+}
+
+.slick-prev {
+  left: -7px;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 1;
+}

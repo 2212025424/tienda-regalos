@@ -1,0 +1,205 @@
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Estilos de estructura general
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.main-wrap-content {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.wrap-container {
+  width: 90% !important;
+  margin: auto;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Eltilos de color de fondos
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.bg-white-hover {
+  background-color: var(--white-color);
+}
+
+.bg-white-hover:hover {
+  background-color: var(--white-color-variation);
+}
+
+.bg-white-variation {
+  background-color: var(--white-color-variation) !important;
+}
+
+.bg-blue-color-variation {
+  background-color: var(--blue-color-variation);
+}
+
+.bg-black-color-variation {
+  background-color: var(--black-color-variation);
+}
+
+.bg-black-color {
+  background-color: var(--black-color);
+}
+
+.bg-primary-color {
+  background-color: var(--main-color) !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Eltilos de fuentes [titulos, subtitulo, texto]
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.content-title {
+  font-weight: bold;
+  font-size: var(--text-title);
+}
+
+.content-subtitle {
+  font-weight: bold;
+  font-size: var(--text-subtitle);
+}
+
+.content-normal {
+  text-align: justify;
+  font-weight: normal;
+  font-size: var(--text-normal);
+}
+
+.content-description {
+  text-align: justify;
+  font-weight: normal;
+  font-size: var(--text-description);
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Estilos de colores para fuentes
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.color-black {
+  color: var(--black-color);
+}
+
+.color-blue {
+  color: var(--blue-color) !important;
+}
+
+.color-white {
+  color: var(--white-color) !important;
+}
+
+.color-white-variation {
+  color: var(--white-color-variation);
+}
+
+.color-gray {
+  color: var(--gray-color);
+}
+
+.color-primary {
+  color: var(--main-color) !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Estilos de sombras
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.shadow-down {
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-element {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Estilos de separadores
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.main-separator {
+  height: 5px;
+  background-color: var(--bg-blue-color-variation);
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Estilos de animaciones a imágenes
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.animation-show-text,
+.animation-transparency-end,
+.animation-color-to-gray {
+  transition: all 0.6s ease-in-out;
+}
+
+.animation-color-to-gray:hover {
+  filter: grayscale(80%) !important;
+}
+
+.animation-transparency-end {
+  filter: opacity(1) !important;
+}
+
+.activator-animation-transparency-end:hover .animation-transparency-end {
+  filter: opacity(0.2) !important;
+}
+
+.animation-show-text {
+  opacity: 0;
+}
+
+.activator-animation-show-text:hover .animation-show-text {
+  opacity: 1 !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*-------------------| Aplicando estilo de bordes */
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.border-top-main {
+  border-top: solid 5px var(--main-color);
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold !important;
+}
+
+.p-5px {
+  padding: 5px !important;
+}
+.pl-5px {
+  padding-left: 5px !important;
+}
+.pr-5px {
+  padding-right: 5px !important;
+}
+
+.min-height-90vh {
+  min-height: 90vh !important;
+}
+
+.over-flow-x-auto {
+  overflow-x: auto !important;
+}
+
+.single-line-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+
+img.img-sm {
+  object-fit: cover;
+  height: 80px !important;
+  width: 80px !important;
+  border-radius: var(--rounded);
+}
+
+.w-100px {
+  max-width: 100px !important;
+}
